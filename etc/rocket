@@ -39,18 +39,21 @@ start() {
 
 restart() {
     echo -n "Restarting $scriptId"
+    cd $ROCKET_HOME
     /usr/local/bin/forever restart $scriptId
     RETVAL=$?
 }
 
 stop() {
     echo -n "Shutting down $scriptId"
+    cd $ROCKET_HOME
     /usr/local/bin/forever stop $scriptId
     RETVAL=$?
 }
 
 status() {
     echo -n "Status $scriptId"
+    cd $ROCKET_HOME
     /usr/local/bin/forever list
     RETVAL=$?
 }
