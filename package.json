@@ -9,6 +9,7 @@
     "cylon": "~0.11.0",
     "cylon-gpio": "~0.11.0",
     "underscore": "~1.6.0",
-    "moving-average": "0.0.4"
+    "moving-average": "0.0.4",
+    "forever": "~0.12.0"
   }
 }
