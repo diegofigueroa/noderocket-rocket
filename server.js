@@ -13,6 +13,7 @@ var Rocket = require('./pirocket');
 var rocket = new Rocket();
 
 require('./timer-strategy')(rocket);
+require('./height-strategy')(rocket);
 
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/www/index.html');

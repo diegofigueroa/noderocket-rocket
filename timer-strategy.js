@@ -4,8 +4,12 @@ module.exports = function (rocket) {
   rocket.on('launch', function() {
     console.log('Deploying parachute in 5s');
     setTimeout(function(){
-      console.log('Deploy parachute now!');
+      console.log('Deploying parachute now!');
       rocket.deployParachute();
     }, 5000);
+  });
+
+  rocket.on('data', function() {
+
   });
 };

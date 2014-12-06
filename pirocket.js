@@ -52,6 +52,7 @@ function Rocket(opts) {
         my.bmp180.getAltitude(1, null, function(err, values) {
           if(err){ console.log(err) }
           else {
+            console.log(values);
             data.temperature = values.temp;
             data.pressure = values.press;
             data.altitude = values.alt;
