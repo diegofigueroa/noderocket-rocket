@@ -3,7 +3,7 @@ module.exports = function (rocket) {
   var previousAltitude = 0;
   var lessHeightReadings = 0;
   var lessHightReadingsTreshold = 3;
-  rocket.on('data', function() {
+  rocket.on('data', function(data) {
     console.log("Rocket data", data);
 
     if (!data.deployed && previousAltitude > 0 && previousAltitude < data.altitude) {
